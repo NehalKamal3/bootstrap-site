@@ -1,0 +1,590 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Dosis','san-serif';
+    font-size: 100%;
+    font-weight: 400;
+}
+
+/*     first part   */ 
+.alert{
+ height: 33px;
+
+}
+.alert strong{
+    margin-bottom: 17px;top: 0;
+}
+.btn-close{
+    margin-bottom: 122px;margin-left: 22px;
+}
+.navbar-top{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.social-link a i{
+    margin-left: 10px;
+    font-size: larger;
+}
+.social-link a:hover i{
+
+    color: rgb(179, 190, 190);
+    font-size: 600;
+}
+
+.logo h2{
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;color: #b9a092;
+}
+
+.icons i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+@media  screen and (max-width:575px) {
+    .social-link a i{
+width: 20px;
+
+    }
+
+    .logo h3{
+font-size: 20px;
+
+    }
+
+    .icons i{
+width: 20px;
+
+    }
+
+    
+.carousel-inner .carousel-caption{
+top: 0;
+margin-top: 172px;
+height: 111px;
+}
+
+}
+
+
+.carousel-inner .carousel-caption{
+    margin-bottom: 500px;
+}
+.carousel-inner{
+
+     height: 822px;
+}
+
+
+.button{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font: 1em sans-serif;width: 64px;
+    padding: 3px;background-color: #f7c9bc;
+    transition: 1s;width: 122px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 111px;font-size: 30px;
+}
+
+.button:hover{
+    background-color: #e2bfb7;font-size: 35px;
+box-shadow: 0 0 35px  #6c11e2;
+}
+.button::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+}
+.button span{
+    z-index: 1;
+    position: relative;
+}
+.button i{
+    position: absolute;
+    inset: 0;display: block;
+}
+.button i::before{
+    content: '';
+    position: absolute;
+top: 0;
+left: 90%;
+width: 19px;
+height: 3px;
+background-color: #97756e;
+transform: translateX(-50%) skewX(360deg);
+transition: 1s;
+}
+.button:hover i::before{
+
+    width: 22px;
+    left: 10%;
+}
+
+.button i{
+    position: absolute;
+    inset: 0;display: block;
+}
+.button i::after{
+    content: '';
+    position: absolute;
+bottom: 0;
+left: 10%;
+width: 19px;
+height: 3px;
+background-color  :#97756e;
+transform: translateX(-50%) skewX(360deg);
+transition: 1s;
+}
+.button:hover i::after{
+
+    width: 22px;
+    left: 90%;
+}
+
+.carousel-inner h3{
+    color: white;font-size: 700;font-weight: bolder;
+}
+.carousel-inner p{
+    color: white;
+}
+
+/*     header  */
+.top-header{
+    background-color: #D6CCC2;
+    height: 22px;
+    justify-content: center;
+}
+.top-header span{
+    font-weight: 0.1rem;
+    color: white;font-size: smaller;
+    top: 0;color: #0a0a09;
+
+}.navigation-wrap{
+    
+    z-index: 1000;
+    width: 100%;
+    left: 0;
+    -webkit-transition: all .3s ease-out;
+    transition:  all .3s ease-out;
+    background-color: white;
+}
+
+.navigation-wrap .nav-item{
+    padding: 0.5rem;
+    transition: all 200ms linear;
+}
+
+.navbar-toggler:focus{
+
+    outline: unset;
+    border: none;
+    box-shadow: none;
+
+}
+.navigation-wrap .nav-link{
+    padding-top: .9375rem;
+    font-size: .875rem;
+    font-weight:400 ;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: .0625rem;
+}
+.navigation-wrap .nav-link:hover,
+    .navigation-wrap .nav-link:active{
+
+color: #cfb09e;
+    }
+    .navigation-wrap.scroll-on{
+        position: fixed;
+        background-color: black;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 .125rem 1.75rem 1 rgb(0, 0, 0,.9);
+        transition: all.15s ease-in-out;
+    }
+
+    .navigation-wrap .scroll-on:hover,
+    .navigation-wrap .scroll-on:active{
+
+color: #634736;
+    }
+    .navbar-brand img{
+        height: 99px;border-radius: 50%;
+    }
+
+    /******** top-banner ******/
+
+    @media (max-width:991px) {
+        .navigation-wrap .navbar-brand img{
+            height: 2.8125rem;
+        }
+        .navbar-toggler i{
+            color: white;
+            line-height: 2;
+        }
+        .navigation-wrap{
+        
+            text-align: right;
+        }
+        
+        .navigation-wrap .nav-link{
+            line-height: 1.875rem;
+        }
+        
+        #home{
+            padding:4.375rem 0 0;
+        
+        }
+        #home .carousel-caption{
+
+top :3rem;
+        }
+
+}
+
+
+/*   phoneee*/
+
+@media (max-width:575px) {
+
+h1{
+    font-size: 1.25rem;
+}
+h2{
+    font-size: 1rem;
+    line-height: 1rem;
+margin-bottom: 5px;}
+
+.carousel-caption .main-btn{
+    height: 20px;
+    line-height: 20px;
+font-size: 0.9375rem;
+}
+.carousel-caption .main-btn::after{
+    transform: translateY(.9375rem);
+    -webkit-transform: translateY(.9375rem);
+}
+.carousel-caption .main-btn::before{
+
+    transform: translateY(-.9375rem);
+    -webkit-transform: translateY(-.9375rem);
+}
+#home .carousel-caption{
+    top: 1.5rem;
+}   
+
+#home .carousel-caption p{
+    margin: 50px auto;
+}
+
+#myCarousel.carousel.slide {
+   height: 50%;
+}
+
+.new {
+margin-top: -355px;
+
+}
+
+
+
+
+}
+
+
+/*               */
+
+.carousel-caption   .main-btn{
+    height: 20px;
+    line-height: 20px;
+font-size: 1.9375rem;
+color: aliceblue;
+text-decoration: none;
+background-color: #7f4f24;
+}
+.carousel-caption .main-btn::after{
+    transform: translateY(1.9375rem);
+    -webkit-transform: translateY(1.9375rem);
+}
+.carousel-caption .main-btn::before{
+
+    transform: translateY(-.9375rem);
+    -webkit-transform: translateY(-.9375rem);
+}
+/*
+    #home .carousel-caption{
+        top: 18rem;
+        position: absolute;
+    }   
+    
+    #home .carousel-caption p{
+
+        max-width: 36.25rem;
+        margin: 1.0625rem auto;
+    }
+
+    
+*/
+
+
+    /* newwwwwwwwwwwww */
+
+   .new{
+    margin-top: px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+    .new .banner-info{
+
+        bottom: 3px;
+    /*    margin: auto;*/
+        width: 100%;
+        z-index: 9;
+        position: absolute;
+        padding: 0 15px;
+        margin-top: 2px;
+
+    }
+   .new .row {
+
+        margin-top: 66px;
+    }
+  
+   .new .bannner-info p {
+        color: rgb(78, 46, 46);
+        margin-top: 11px;
+
+
+    }
+    .new .bannner-info .button{
+        color: rgb(87, 60, 60); 
+        font-size: 28px;
+    }
+
+    .new .card-banner .card-thumb ,
+    .products .item-products{
+
+        position: relative;
+        display: block;
+        overflow: hidden;
+    }
+
+    .new .card-banner .card-thumb img ,
+    .products .item-products img{
+transition: all .5s ease-out 0s;
+transform-style: preserve-3d;
+    }
+    .new .card-banner .card-thumb img:hover {
+      /*  .products .item-products  img:hover{*/
+transform: scale(1.2);
+opacity: .7;
+
+    }
+
+/** productsss   */
+
+.products{
+    margin-top: 77px;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.products .row{
+    text-transform: uppercase;margin-top: 44px;
+}
+.products .nav-tabs{
+
+    border: 0;
+    justify-content: center;
+
+}
+
+
+.products .nav-tabs .nav-link{
+    padding: 0 30px;
+    display: block;
+    border: 1px solid #F5EBE0;  background-color: #F5EBE0;
+
+   /* background-color:#EDEDE9 ;*/
+    border-radius: 22px;
+    color: black;
+    font-size: large;
+    text-transform:uppercase;
+    height: 36;
+    margin: 10px;
+    line-height: 34px;
+}
+.products .nav-tabs .nav-link:hover{
+   /* background-color:#EDEDE9 ;*/background-color:#E3D5CA ;
+
+color: #22221e;
+}
+
+.products .product-info .cat-parent,
+.products .product-info .wishlist i
+{
+
+font-size: .875rem;
+color: #977c76;
+opacity: .9;
+text-transform: uppercase;
+text-decoration: none;
+}
+.products .product-info .cat-parent:hover,
+.products .product-info .wishlist i:hover
+{
+color: #533a35;
+
+}
+.products .product-info .wishlist i{
+    margin-left: 15px;
+    text-decoration-color: white;
+}
+
+
+
+.products .product-title a{
+    margin: 0 0 7px;
+    display: block;
+    color: #b2967d;
+    text-decoration: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.products .rating i{
+    color: #d6bd77;    
+
+}
+.products  .basket .shop {
+    color: #0a0a09;    
+
+}
+
+.products .product-price span {
+    color: #5e5e55;
+    text-decoration: none;
+}
+
+    .item-products .img2{
+position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;height: 100%;
+        opacity: 0;
+/*transform: rotateY(180deg);*/
+transition:all .6s ease-in-out ;
+    }
+    .item-products:hover img {
+    transform: rotateY(180deg);
+    opacity: 1;
+    }
+
+    /*** deal  */
+
+    .deal-of-the-day{
+        background-image: url(../images/33.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border: 1px solid white;
+        margin-bottom: 37px;
+    }
+    #deal .text-content h2,p{
+        color: #eed7c9;
+        
+    }
+
+    .deal  .deal-of-the-day h2,h4,p{
+transition: all .5s ease-out 0s;
+transform-style: preserve-3d;
+    }
+    .deal:hover{
+      /*  .products .item-products  img:hover{*/
+transform: scale(1.2);
+
+    }
+
+
+    /* blogggggg*/
+.cart{
+    position: relative;
+}
+    .blog .head-part h2{
+        text-transform: uppercase;
+
+    }
+    #blog .head-part p {
+color: #94775e;
+    }
+    .blog .img1{
+        position: relative;transition: 1s ease all;
+    }
+    .blog .collec h2{
+        color: #22221e;
+font-weight: 400; 
+font-style: oblique;
+}
+.blog .collec p{
+    color: #94775e;font-style: oblique;
+}
+#blog .cart .img2{
+  position: absolute;
+  width: 333px;margin-top: 55px;
+left: 0;
+top: 0;
+opacity: 0;height: 300px;
+transition: 1s ease all;
+}
+    
+    #blog .cart:hover .img2{
+        padding:0px 0 0 7px;
+    opacity: 1;
+    }
+    #blog .cart:hover .img1{
+opacity: 0;
+    }
+
+
+/*
+.blog .row{
+
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i * 45deg) )  translatez(400px));
+    position: relative;
+}
+
+.blog .row img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+    /*     */
+
+    .footer{
+        background-color: #E3D5CA;
+    }
+
+    footer   a i{
+
+        font-size: 1.5rem;
+        color: #7c4e46;
+        padding: 0 1rem;text-decoration: none;
+    }
+    footer   a:hover i{
+
+color: #b48881;
+    }
+    .txt p{
+        color: #473232;text-decoration: none;
+    }
+
